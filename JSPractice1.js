@@ -1,4 +1,4 @@
-// Write a function that repeats the string a given number of times; will take two params, the string and a number
+// 01  Write a function that repeats the string a given number of times; will take two params, the string and a number
 
 function repeatString(str, num) {
     let newString = '';
@@ -10,7 +10,7 @@ function repeatString(str, num) {
 
 console.log(repeatString('hey', 3));
 
-// reverse String  
+// 02  reverse String  
 
 function reverseString(str) {
     let newArr = str.split('')
@@ -21,3 +21,22 @@ function reverseString(str) {
 }
 
 console.log(reverseString("palindrome words"))
+
+
+
+
+
+// 06 Leap years
+
+function leapChecker(year) {
+    year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0) ? console.log("This is a leap year") : console.log("This is not a leap year")
+}
+leapChecker(2000)
+
+// 07 Temp converter
+
+const convertToCelsius = f => Math.round(((f - 32) * 5/9)*10)/10
+const convertToFahrenheit = c => Math.round(((c * 9/5) + 32) *10)/10
+
+console.log(convertToCelsius(70));
+console.log(convertToFahrenheit(21));
