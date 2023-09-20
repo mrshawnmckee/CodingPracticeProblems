@@ -22,9 +22,35 @@ function reverseString(str) {
 
 console.log(reverseString("palindrome words"))
 
+// 03 Takes an array and some other arguments and then removes the other arguments
+
+const removeFromArray = function(arr, ...args) {
+    const newArray = [];
+    arr.forEach((item) => {
+        if (!args.includes(item)){
+            newArray.push(item)
+        }
+    })
+    return newArray
+}
+
+console.log(removeFromArray([1,2,3,4], 3,2))
 
 
+// 05 Sum All; takes 2 integers and returns the sum of every number between and including them
 
+const sumAll = function(num1, num2) {
+    let count = num2 + 1 - num1;
+    // console.log(count)
+    let sum = 0;
+    for(let i = num1; i < count + 1; i++){
+        sum += i
+        console.log(sum)
+    }
+    return sum
+}
+
+console.log(`The sum of the numbers is ${sumAll(1,4000)}`)
 
 // 06 Leap years
 
@@ -40,3 +66,5 @@ const convertToFahrenheit = c => Math.round(((c * 9/5) + 32) *10)/10
 
 console.log(convertToCelsius(70));
 console.log(convertToFahrenheit(21));
+
+
