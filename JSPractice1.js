@@ -104,14 +104,17 @@ function fibonaccirArray(num){
 
 console.log(fibonaccirArray(8));
 
-// //  fibonacci array with recursion
+//  fibonacci array with recursion
 
-// function recursiveFibonacci(n){
-//     if(n < 2){
-//         return n
-//     } else {
-//         return (recursiveFibonacci(n-1) + recursiveFibonacci(n -2))
-//     }
-// }
 
-// console.log(recursiveFibonacci(8));
+function recursiveFibonacci(n){
+
+    if(n < 2){
+        return n
+    } else {
+        return (recursiveFibonacci(n-1) + recursiveFibonacci(n -2))
+    }
+}
+
+
+console.log(recursiveFibonacci(5))
