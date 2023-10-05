@@ -175,6 +175,9 @@
 
 // console.log(makeNegative(-30));
 
+
+// Change an array with 10 numbers to a phone number
+
 function createPhoneNumber (array){
     let phoneString = array.join('');
     console.log(phoneString)
@@ -186,3 +189,4 @@ function createPhoneNumber (array){
 }
 
 console.log(createPhoneNumber([1,2,3,4,5,6,7,8,9,0]))
+
