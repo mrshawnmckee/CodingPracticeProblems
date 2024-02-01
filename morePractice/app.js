@@ -1,0 +1,1 @@
+const pet = { species: "dog", name: "Fido", age: 1}
