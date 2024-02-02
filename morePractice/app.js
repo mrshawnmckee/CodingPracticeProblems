@@ -35,6 +35,8 @@ const myTri = new Triangle(3, 4);
 
 myTri.getArea();    //this does the same as the above
 
+
+//Bank Account Class
 class BankAccount {
     constructor(name, accountNumber, balance =0) {  //set default balance to 0
 
@@ -47,7 +49,7 @@ class BankAccount {
         this.balance = balance;
     }
 
-    makeDeposit(amt) {
+    deposit(amt) {
         if(amt > 0){ //You can't deposit a negative amount
           this.balance += amt
           console.log(`Your balance is ${this.balance}`)
@@ -55,13 +57,16 @@ class BankAccount {
             console.log('You cannot deposit a negative amount')
         }
     }
-    makeWithdraw(amt){
+    withdraw(amt){
         if (amt > this.balance) { 
             console.log(`You do not have enough funds`)
         }  else {
             this.balance -= amt
             console.log(`Your balance is ${this.balance}`)
         }
+    }
+    statement(){
+        console.log(`${this.name}. your account balance for ${this.accountNumber} is $${this.balance}`)
     }
 }
 
